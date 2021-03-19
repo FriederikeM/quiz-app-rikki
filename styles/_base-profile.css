@@ -20,7 +20,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  color: var(--background-color-footer);
 }
 
 h1 {
@@ -157,10 +156,47 @@ hr {
   padding: 7px 15px;
   box-shadow: 0 10px 13px -7px #000000;
   transition: 200ms ease-in-out;
+  margin: 15px 10px;
 }
 
 .profile__log-out__button:hover {
   background-color: var(--button-hover-color);
   cursor: pointer;
   color: var(--primary-headline-color);
+  box-shadow: none;
+}
+
+.toggle-button {
+  border-radius: 20px;
+  border: none;
+  background-color: #05121d;
+  color: aliceblue;
+  padding: 7px 15px;
+  box-shadow: 0 10px 13px -7px #000000;
+  transition: 200ms ease-in-out;
+  margin: 15px 10px;
+}
+
+.toggle-button:hover {
+  background-color: var(--background-color-header);
+  cursor: pointer;
+  color: #05121d;
+  box-shadow: none;
+}
+
+.dark-mode {
+  background-color: #05121d;
+  color: aliceblue;
+}
+
+.dark-mode-header {
+  background-color: #0c2d49;
+}
+
+.dark-mode-button {
+  box-shadow: 0 10px 13px -7px #8ef7f5;
+}
+
+.dark-mode-button:hover {
+  box-shadow: none;
 }

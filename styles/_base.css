@@ -7,7 +7,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  color: var(--primary-text-color);
 }
 
 h1,
@@ -71,7 +70,7 @@ a {
 .question-card {
   border: 1px solid var(--background-color-cards);
   width: 310px;
-  height: 220px;
+  height: auto;
   position: relative;
   border-radius: 5px;
   display: grid;
@@ -82,12 +81,16 @@ a {
 }
 
 .question-card__bookmark,
-.question-card a {
+.question-card i {
   position: absolute;
   right: 15px;
   top: -1px;
   font-size: 30px;
   color: var(--background-color-footer);
+}
+
+.question-card i:hover {
+  cursor: pointer;
 }
 
 .question-card__bookmark:hover {
@@ -102,6 +105,13 @@ a {
 
 .question-card__question {
   font-size: 15px;
+}
+
+.question-card__show-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .question-card button {
@@ -120,6 +130,7 @@ a {
   background-color: var(--button-hover-color);
   border: 1px solid var(--button-hover-color);
   color: var(--primary-headline-color);
+  box-shadow: none;
 }
 
 .question-card__tags {
@@ -135,4 +146,10 @@ a {
   border: 1px solid;
   padding: 1px 25px;
   border-radius: 3px;
+  margin: 5px 0;
+}
+
+.answer-text {
+  text-align: center;
+  display: none;
 }
