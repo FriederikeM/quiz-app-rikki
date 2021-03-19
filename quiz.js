@@ -30,4 +30,20 @@ for (let i = 0; i < bookmark.length; i++) {
   })
 }
 
-//
+// Log form input
+
+const button = document.querySelector('.create__submit')
+const form = document.querySelector('.form')
+const data = []
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  const newCreation = {
+    questionInput: form['question'].value,
+    answerInput: form['answer'].value,
+    tagsInput: form['tags'].value,
+  }
+  data.push(newCreation)
+  console.log(data)
+  form.reset()
+})
