@@ -32,7 +32,6 @@ for (let i = 0; i < bookmark.length; i++) {
 
 // Log form input
 
-const button = document.querySelector('.create__submit')
 const form = document.querySelector('.form')
 const data = []
 
