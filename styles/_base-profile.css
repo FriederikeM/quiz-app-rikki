@@ -1,93 +1,16 @@
-:root {
-  --background-color-header: #6dc9c8;
-  --background-color-main: #f7e9e3;
-  --background-color-footer: #0e3150;
-  --background-color-cards: #ffc0c2;
-  --primary-text-color: #0e3150;
-  --primary-headline-color: #eaf6f6;
-  --button-color: #6dc9c8;
-  --button-hover-color: #0e3150;
-  --icon-color: #eaf6f6;
-  --current-icon-color: #ffc0c2;
+.profile__personal__name {
+  color: var(--primary-text-color);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 112.5%;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h1 {
+.profile__about__title {
   line-height: 1.3;
-  margin: 8px 0;
-  color: var(--primary-headline-color);
+  padding-left: 15px;
+  color: var(--primary-text-color);
 }
 
-p,
-h2 {
+.profile__about__text {
   line-height: 1.3;
-  padding: 10px;
-}
-
-button {
-  font-size: 1em;
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-headline-color);
-}
-
-hr {
-  width: 95%;
-  color: var(--background-color-footer);
-  opacity: 0.7;
-}
-
-.main-grid {
-  display: grid;
-  grid-template-rows: [header] 60px [main] auto [footer] 60px;
-  min-width: 320px;
-  max-width: 60vw;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.grid-head {
-  grid-row: header;
-  background-color: var(--background-color-header);
-  text-align: center;
-}
-
-.profile {
-  grid-row: main;
-  background-color: var(--background-color-main);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  overflow-y: scroll;
-  flex-wrap: wrap;
-  overflow-x: hidden;
-}
-
-.grid-footer {
-  grid-row: footer;
-  display: flex;
-  flex-direction: row;
-  background-color: var(--background-color-footer);
-  justify-content: space-around;
-  align-items: center;
-  font-size: 35px;
-}
-
-.grid-footer > a {
-  margin-top: 8px;
+  padding: 15px;
 }
 
 .profile__personal {
@@ -185,14 +108,14 @@ hr {
   box-shadow: none;
 }
 
-.dark-mode {
+/* .dark-mode {
   background-color: #05121d;
   color: aliceblue;
 }
 
 .dark-mode-header {
   background-color: #0c2d49;
-}
+} */
 
 .dark-mode-button {
   box-shadow: 0 10px 13px -7px #8ef7f5;
@@ -200,4 +123,12 @@ hr {
 
 .dark-mode-button:hover {
   box-shadow: none;
+}
+
+.dark-mode-name {
+  color: aliceblue;
+}
+
+.dark-mode-about {
+  color: aliceblue;
 }
