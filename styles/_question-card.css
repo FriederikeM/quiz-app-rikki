@@ -1,7 +1,6 @@
 /* Question Cards Home and Bookmark Page */
 
 .question-card {
-  border: 1px solid var(--background-color-cards);
   width: 310px;
   height: auto;
   position: relative;

@@ -86,7 +86,7 @@
 .profile__log-out__button:hover {
   background-color: var(--button-hover-color);
   cursor: pointer;
-  color: var(--primary-headline-color);
+  color: var(--background-color-main);
   box-shadow: none;
 }
 
@@ -102,20 +102,29 @@
 }
 
 .toggle-button:hover {
-  background-color: var(--background-color-header);
+  background-color: var(--button-hover-color);
   cursor: pointer;
-  color: #05121d;
+  color: var(--background-color-main);
   box-shadow: none;
 }
 
-/* .dark-mode {
-  background-color: #05121d;
-  color: aliceblue;
+.dark-mode-toggle-button {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--background-color-header);
+  padding: 7px 15px;
+  box-shadow: 0 10px 13px -7px #8ef7f5;
+  transition: 200ms ease-in-out;
+  margin: 15px 10px;
+  color: var(--primary-text-color);
 }
 
-.dark-mode-header {
-  background-color: #0c2d49;
-} */
+.dark-mode-toggle-button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+  color: var(--background-color-main);
+  box-shadow: none;
+}
 
 .dark-mode-button {
   box-shadow: 0 10px 13px -7px #8ef7f5;
@@ -126,9 +135,9 @@
 }
 
 .dark-mode-name {
-  color: aliceblue;
+  color: var(--background-color-main);
 }
 
 .dark-mode-about {
-  color: aliceblue;
+  color: var(--background-color-main);
 }

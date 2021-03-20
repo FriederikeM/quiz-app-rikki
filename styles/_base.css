@@ -24,7 +24,7 @@ button {
 
 a {
   text-decoration: none;
-  color: var(--primary-headline-color);
+  color: var(--icon-color);
 }
 
 .main-grid {
@@ -76,5 +76,9 @@ a {
 }
 
 .dark-mode-header {
-  background-color: #0c2d49;
+  background-color: var(--background-color-footer);
+}
+
+.dark-mode-headline {
+  color: var(--background-color-main);
 }

@@ -13,4 +13,8 @@ function myFunction() {
   name.classList.toggle('dark-mode-name')
   let aboutMe = document.querySelector('.profile__about__title')
   aboutMe.classList.toggle('dark-mode-about')
+  let toggleButton = document.querySelector('.toggle-button')
+  toggleButton.classList.toggle('dark-mode-toggle-button')
+  let headline = document.querySelector('h1')
+  headline.classList.toggle('dark-mode-headline')
 }
