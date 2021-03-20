@@ -1,10 +1,10 @@
 :root {
-  --background-color-header: #6dc9c8;
-  --background-color-main: #f7e9e3;
-  --background-color-footer: #0e3150;
+  --background-color-header: #b4ebea;
+  --background-color-main: #fef4ff;
+  --background-color-footer: #051c30;
   --background-color-cards: #ffc0c2;
   --primary-text-color: #0e3150;
-  --primary-headline-color: #eaf6f6;
+  --primary-headline-color: #0e3150;
   --button-color: #6dc9c8;
   --button-hover-color: #0e3150;
   --icon-color: #eaf6f6;
