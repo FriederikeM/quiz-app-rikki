@@ -73,6 +73,7 @@ hr {
   align-items: center;
   overflow-y: scroll;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .grid-footer {
