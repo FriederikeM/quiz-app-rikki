@@ -96,8 +96,9 @@ a {
   grid-row: main;
   background-color: var(--background-color-main);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   overflow-y: scroll;
 }
 
