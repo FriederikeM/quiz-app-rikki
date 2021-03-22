@@ -19,6 +19,11 @@ export default function createCard(card) {
     bookmark.classList.add('far')
   }
 
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('far')
+    bookmark.classList.toggle('fas')
+  })
+
   const headlineWrapper = document.createElement('div')
   headlineWrapper.classList.add('question-card__title')
   cardSection.append(headlineWrapper)
@@ -48,6 +53,15 @@ export default function createCard(card) {
   answer.classList.add('answer-text')
   answer.textContent = card.answer
   answerWrapper.append(answer)
+
+  answerButton.addEventListener('click', () => {
+    answer.classList.toggle('answer-text')
+    if (answerButton.textContent === 'Show Answer') {
+      answerButton.textContent = 'Hide Answer'
+    } else {
+      answerButton.textContent = 'Show Answer'
+    }
+  })
 
   const tagWrapper = document.createElement('div')
   tagWrapper.classList.add('question-card__tags')
