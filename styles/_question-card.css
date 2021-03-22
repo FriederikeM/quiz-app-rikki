@@ -43,7 +43,7 @@
   flex-direction: column;
 }
 
-.question-card button {
+.question-card__show-answer button {
   display: block;
   margin: 0 auto 15px auto;
   border-radius: 3px;

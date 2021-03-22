@@ -1,3 +1,13 @@
+import { data } from './src/lib/db.js'
+import createCard from './src/lib/card.js'
+
+const content = document.querySelector('.grid-content')
+
+for (let i = 0; i < data.length; i++) {
+  const cardSection = createCard(data[i])
+  content.append(cardSection)
+}
+
 // Show Answer
 
 let answerButton = document.querySelectorAll('.question-card__show-answer')
@@ -29,20 +39,3 @@ for (let i = 0; i < bookmark.length; i++) {
     }
   })
 }
-
-// Log form input
-
-const form = document.querySelector('.form')
-const data = []
-
-form.addEventListener('submit', event => {
-  event.preventDefault()
-  const newCreation = {
-    questionInput: form['question'].value,
-    answerInput: form['answer'].value,
-    tagsInput: form['tags'].value,
-  }
-  data.push(newCreation)
-  console.log(data)
-  form.reset()
-})
