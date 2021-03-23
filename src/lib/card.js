@@ -24,13 +24,13 @@ export default function createCard(card) {
     bookmark.classList.toggle('fas')
   })
 
-  const headWrapper = document.createElement('div')
-  headWrapper.classList.add('question-card__title')
-  cardSection.append(headWrapper)
+  const flexWrapper = document.createElement('div')
+  flexWrapper.classList.add('question-card__title')
+  cardSection.append(flexWrapper)
 
   const h3Title = document.createElement('h3')
   h3Title.textContent = 'Question'
-  headWrapper.append(h3Title)
+  flexWrapper.append(h3Title)
 
   const questionWrapper = document.createElement('div')
   questionWrapper.classList.add('box-main')
