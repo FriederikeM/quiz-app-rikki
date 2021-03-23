@@ -76,6 +76,7 @@
   padding: 1px 25px;
   border-radius: 3px;
   margin: 5px 0;
+  list-style: none;
 }
 
 .answer-text {

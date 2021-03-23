@@ -24,13 +24,13 @@ export default function createCard(card) {
     bookmark.classList.toggle('fas')
   })
 
-  const headlineWrapper = document.createElement('div')
-  headlineWrapper.classList.add('question-card__title')
-  cardSection.append(headlineWrapper)
+  const headWrapper = document.createElement('div')
+  headWrapper.classList.add('question-card__title')
+  cardSection.append(headWrapper)
 
   const h3Title = document.createElement('h3')
   h3Title.textContent = 'Question'
-  headlineWrapper.append(h3Title)
+  headWrapper.append(h3Title)
 
   const questionWrapper = document.createElement('div')
   questionWrapper.classList.add('box-main')
@@ -68,34 +68,10 @@ export default function createCard(card) {
   cardSection.append(tagWrapper)
 
   for (let i = 0; i < card.tags.length; i++) {
-    const tags = document.createElement('div')
+    const tags = document.createElement('li')
     tags.classList.add('question-card__tags-item')
     tags.textContent = card.tags[i]
     tagWrapper.append(tags)
   }
   return cardSection
 }
-
-// {
-/* <article class="question-card">
-          <i
-            class="far fa-bookmark question-card__bookmark question-card__bookmark--toggled"
-          ></i>
-          <div class="question-card__title">
-            <h3>Question:</h3>
-          </div>
-          <div class="box-main">
-            <p class="question-card__question">What is love?</p>
-          </div>
-          <div class="question-card__show-answer">
-            <button>SHOW ANSWER</button>
-            <div class="answer-text">This ist the first answer</div>
-          </div>
-          <div class="question-card__tags">
-            <span class="question-card__tags-item">#Baby</span>
-            <span class="question-card__tags-item">#don't</span>
-            <span class="question-card__tags-item">#hurt</span>
-            <span class="question-card__tags-item">#me</span>
-          </div>
-        </article> */
-// }
