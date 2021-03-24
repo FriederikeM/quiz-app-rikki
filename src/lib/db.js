@@ -1,4 +1,5 @@
 export function pushSection(sectionObject) {
+  console.log(sectionObject)
   let questionCards
   const storageQuestions = JSON.parse(localStorage.getItem('questionCards'))
   if (storageQuestions === null) {

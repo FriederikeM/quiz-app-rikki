@@ -11,13 +11,13 @@ export default function createCard(card) {
   )
   cardSection.append(bookmark)
 
-  if (card.isBookmarked) {
-    bookmark.classList.remove('far')
-    bookmark.classList.add('fas')
-  } else {
-    bookmark.classList.remove('fas')
-    bookmark.classList.add('far')
-  }
+  // if (card.isBookmarked) {
+  //   bookmark.classList.remove('far')
+  //   bookmark.classList.add('fas')
+  // } else {
+  //   bookmark.classList.remove('fas')
+  //   bookmark.classList.add('far')
+  // }
 
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('far')
