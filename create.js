@@ -1,4 +1,4 @@
-import { pushSection } from './src/lib/db.js'
+import { pushObject } from './src/lib/db.js'
 
 const form = document.querySelector('form')
 
@@ -15,7 +15,7 @@ form.addEventListener('submit', event => {
     answer: answerInput,
     tags: tagsInputArray,
   }
-  pushSection(input)
+  pushObject(input)
 
   form.reset()
   alert('Question created! 🎉')
