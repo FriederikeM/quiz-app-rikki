@@ -22,3 +22,7 @@ export function getQuestion() {
   }
   return questionCards
 }
+
+export function storeData(data) {
+  localStorage.setItem('questionCards', JSON.stringify(data))
+}

@@ -1,4 +1,6 @@
-export default function createCard(card) {
+import { getQuestion, storeData } from './db.js'
+
+export default function createCard(card, index) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('question-card')
 
@@ -11,9 +13,21 @@ export default function createCard(card) {
   )
   cardSection.append(bookmark)
 
+  if (card.isBookmarked) {
+    bookmark.classList.remove('far')
+    bookmark.classList.add('fas')
+  }
+
   bookmark.addEventListener('click', () => {
-    bookmark.classList.toggle('far')
+    const data = getQuestion()
+    if (bookmark.classList.contains('fas')) {
+      data[index].isBookmarked = false
+    } else {
+      data[index].isBookmarked = true
+    }
     bookmark.classList.toggle('fas')
+    bookmark.classList.toggle('far')
+    storeData(data)
   })
 
   const flexWrapper = document.createElement('div')
