@@ -1,4 +1,5 @@
 import { pushObject } from './src/lib/db.js'
+import { getQuestion } from './src/lib/db.js'
 
 const form = document.querySelector('form')
 
@@ -10,10 +11,13 @@ form.addEventListener('submit', event => {
   const tagsInput = form['tags']
   const tagsInputArray = tagsStringToArray(tagsInput.value)
 
+  const data = getQuestion()
   const input = {
+    id: data.length + 1,
     question: questionInput,
     answer: answerInput,
     tags: tagsInputArray,
+    isBookmarked: false,
   }
   pushObject(input)
 
